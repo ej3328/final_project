@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Final Project Pitch</title>
+</head>
+<body>
+
+<style>
+
+  h1, h2, p {
+    margin-bottom: 20px;
+  }
+
+  .home_container {
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    border: solid 1px black;
+  }
+
+  .about_container {
+    background-image: url("ic_4.jpg");
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about {
+    text-align: center;
+    padding: 50px;
+    height: 90vh;
+  }
+
+  .about h1 {
+    font-size: 60px;
+    text-shadow: 10px 5px 5px lightpink;
+    color: white;
+  }
+
+  body {
+    background-color: #FFF;
+    width: 100%;
+    height: 80px;
+    margin: 0px !important;
+    color: black;
+  }
+
+
+  nav {
+    width: 100%;
+    height: 52px;
+    overflow: hidden;
+    background-color: #050303;
+    border-bottom: solid black 1px;
+    text-align: right;
+    position: fixed;
+    top: 0;
+  }
+
+
+  nav .logo {
+    font-size: 19px;
+    position: absolute;
+    left: 5px;
+    color: white;
+  }
+
+
+  nav li {
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+
+
+  nav ul li a:link {
+    text-decoration: none;
+    color: black;
+  }
+
+  nav ul li a:visited {
+    text-decoration: none;
+    color: red;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 2.5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+  }
+
+  .footer {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
+  @media screen and (max-width: 799px) {
+
+    nav li {
+      display: none;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      cursor: pointer;
+    }
+
+    .menu {
+      display: flex;
+      position: fixed;
+      top: 53px;
+      right: -150px;
+      width: 150px;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      color: white;
+      background-color: gray;
+      min-height: 140px;
+      transition: 0.125s;
+    }
+
+  }
+
+
+
+</style>
+
+
+
+
+<nav>
+  <ul>
+    <div class="logo">
+      <b>The Ice Cream Shop</b>
+    </div>
+  </ul>
+  <ul>
+    <li><a href="index.html"><button>HOME</button></a></li>
+    <li><a href="about.html"><button>ABOUT</button></a></li>
+    <li><a href="menu.html"><button>MENU</button></a></li>
+    <li><a href="contact.html"><button>CONTACT</button></a></li>
+  </ul>
+  <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+  <div class="menu">
+    <b><a href="index.html">HOME</a></b>
+    <b><a href="about.html">ABOUT</a></b>
+    <b><a href="menu.html">MENU</a></b>
+    <b><a href="contact.html">CONTACT</a></b>
+  </div>
+</nav>
+
+
+
+
+
+
+
+<div class="about_container">
+  <div class="about">
+    <h1>How we got started?</h1>
+    <p>3 guys, a dream and a truck filled with ice cream. We essentially started with four flavors:
+      vanilla, strawberry, chocolate and neapolitan. After our regular 9 - 5 jobs we would
+    start making and mixing ice cream in the kitchen and then on the weekends we would load up our
+    truck that was loaned to us by a friend that owned his own catering business, and hit the streets</p>
+
+    <p>After a few years of relentless persistence and determination and countless hours making ice cream, our
+      dream would soon take flight, a few famous people tried our ice cream and loved it! Shortly afterwards
+      those same famous people would post about The Ice Cream Shop on social media, and before we knew it
+      we were getting more customers than we could handle, we immediately started hiring more employees to
+      keep up with the rapid growing demand.</p>
+
+    <p>Our mission has always been to have fun and make ice cream that people know and love! </p>
+  </div>
+</div>
+
+
+<script src="menu.js"></script>
+
+
+<footer class="footer">
+  <b>Copyright 2021</b>
+</footer>
+
+
+</body>
+</html>

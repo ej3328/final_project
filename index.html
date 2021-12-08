@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Project Pitch</title>
+</head>
+<body>
+
+<style>
+
+    h1, h2, p {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .home_container {
+        background-image: url("ic_4.jpg");
+        background-position: center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        text-align: center;
+    }
+
+    .home {
+        text-align: center;
+        padding: 50px;
+        height: 100vh;
+    }
+
+    .image_container {
+        text-align: center;
+        padding: 50px;
+    }
+
+    body {
+        background-color: #FFF;
+        width: 100%;
+        height: 80px;
+        margin: 0px !important;
+        color: white;
+    }
+
+    nav {
+        width: 100%;
+        height: 52px;
+        overflow: hidden;
+        background-color: #050303;
+        border-bottom: solid black 1px;
+        text-align: right;
+        position: fixed;
+        top: 0
+    }
+
+    nav .logo {
+        font-size: 19px;
+        position: absolute;
+        left: 5px;
+    }
+
+
+    nav li {
+        display: inline;
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+
+    .image {
+        width: 200px;
+        height: 200px;
+        display: flex;
+    }
+
+    .image_box {
+        width: auto;
+        height: auto;
+        display: inline-block;
+        margin: 10px;
+    }
+
+
+
+    nav ul li a:link {
+        text-decoration: none;
+        color: black;
+    }
+
+    nav ul li a:visited {
+        text-decoration: none;
+        color: red;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 2.5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #ffffff;
+    }
+
+
+    @media screen and (max-width: 799px) {
+
+        nav li {
+            display: none;
+        }
+
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            cursor: pointer;
+        }
+
+        .menu {
+            display: flex;
+            position: fixed;
+            top: 53px;
+            right: -300px;
+            width: 150px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            color: white;
+            background-color: gray;
+            min-height: 140px;
+            transition: 0.125s;
+        }
+    }
+
+    .footer {
+        width: 100%;
+        height: auto;
+        background-color: black;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .section_1 {
+        text-align: center;
+        background-color: #050303;
+        padding: 30px;
+    }
+
+    .section_2 {
+        text-align: center;
+        padding: 50px;
+        marging: 100px;
+        margin-bottom: 40px;
+    }
+
+</style>
+
+
+
+<nav>
+    <ul>
+        <div class="logo">
+            <b>The Ice Cream Shop</b>
+        </div>
+    </ul>
+    <ul>
+        <li><a href="index.html"><button>HOME</button></a></li>
+        <li><a href="about.html"><button>ABOUT</button></a></li>
+        <li><a href="menu.html"><button>MENU</button></a></li>
+        <li><a href="contact.html"><button>CONTACT</button></a></li>
+    </ul>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <div class="menu">
+        <b><a href="index.html">HOME</a></b>
+        <b><a href="about.html">ABOUT</a></b>
+        <b><a href="menu.html">MENU</a></b>
+        <b><a href="contact.html">CONTACT</a></b>
+    </div>
+</nav>
+
+<style>
+
+    .home_container h1 {
+        color: white;
+        font-size: 60px;
+        text-shadow: 10px 5px 5px lightpink;
+    }
+
+</style>
+
+
+
+<div class="home_container">
+    <div class="home">
+        <h1>Welcome to <br>The Ice Cream Shop!!!</h1>
+    </div>
+</div>
+
+
+
+<div class="section_1">
+    <h2>The Best Ice Cream In Town!!!</h2>
+</div>
+
+<style>
+    p {
+        color: black;
+        font-size: 12px;
+    }
+
+    .box_2 {
+        width: 200px;
+    }
+</style>
+
+<div class="image_container">
+    <div class="image_box">
+        <div class="box_1">
+            <img src="ic_1.jpg" class="image" alt="ice cream">
+        </div>
+        <div class="box_2">
+            <p>Did you know our ice cream is made fresh in every store? Yep!</p>
+        </div>
+    </div>
+    <div class="image_box">
+        <div class="box_1">
+            <img src="ic_3.jpg" class="image" alt="ice cream">
+        </div>
+        <div class="box_2">
+            <p>Awarded town favorite 3 years in a row by The National Association of Desserts. </p>
+        </div>
+    </div>
+    <div class="image_box">
+        <div class="box_1">
+            <img src="ic_1.jpg" class="image" alt="ice cream">
+        </div>
+        <div class="box_2">
+            <p>Have an idea for an ice cream flavor? Submit your idea today! </p>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="footer">
+    <b>Copyright 2021</b>
+</footer>
+
+<script src="menu.js"></script>
+
+</body>
+</html>
